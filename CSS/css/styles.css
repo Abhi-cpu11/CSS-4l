@@ -1,0 +1,61 @@
+/* External Doc */
+body {
+  /*This is external CSS*/
+  background-color: #d9ff00;
+}
+nav {
+  color: white;
+  background-color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+body {
+  /*This is internal CSS*/
+  background-color: rgb(230, 238, 0);
+}
+h1 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+  text-align: left;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#sytled-by-id {
+  font-family: Georgia, Cambria, serif;
+  font-weight: bold;
+}
