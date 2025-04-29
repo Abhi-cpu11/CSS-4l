@@ -1,0 +1,37 @@
+<!--
+overflow: scroll;    /* Always shows scrollbars */
+overflow: hidden;    /* Hides overflow */
+overflow: visible;   /* Default, lets content overflow visibly
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        overflow: visible; /* Scrolls only when needed */
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      p {
+        margin: 0;
+      }
+      text-shadow {
+        text-shadow: 2px 2px 4px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p style="text-shadow: 2px 7px 9px red">
+        we did it. we did it.we did it.we did it.we did it.we did it.we did
+        it.we did it.we did it.we did it.we did it.we did it.we did it.we did
+        it.we did it.we did it.we did it.we did it.
+      </p>
+    </div>
+  </body>
+</html>
