@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy Landing Page</title>
+    <style>
+      /* Space Colors */
+      :root {
+        --primary: #0b3d91; /* Deep Space Blue */
+        --accent: #7f5af0; /* Neon Purple */
+        --background: #0d0d0d; /* Almost Black */
+        --text-light: #e0e0e0;
+        --white: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--background);
+        color: var(--text-light);
+        transition: background-color 0.5s ease;
+      }
+
+      header {
+        padding: 3rem;
+        text-align: center;
+        background: linear-gradient(to right, var(--primary), var(--accent));
+        color: var(--white);
+        animation: slideDown 1s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      section {
+        padding: 3rem 2rem;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      button {
+        background-color: var(--accent);
+        color: var(--white);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: var(--primary);
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        opacity: 0.6;
+      }
+
+      /* Background Stars */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("https://raw.githubusercontent.com/taniarascia/primitive/main/images/stars.svg");
+        opacity: 0.2;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Journey Through the Cosmos</h1>
+      <p>Explore. Dream. Discover.</p>
+    </header>
+
+    <section>
+      <h2>Mission Briefing</h2>
+      <p>
+        Welcome aboard, explorer. This page demonstrates how smooth transitions
+        and subtle animations can launch your web design into another galaxy.
+      </p>
+      <br />
+      <button>Launch Now</button>
+    </section>
+
+    <footer>© 2025 Starbase Abhijay — Powered by CSS Magic</footer>
+  </body>
+</html>

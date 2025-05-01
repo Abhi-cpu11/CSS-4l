@@ -25,18 +25,6 @@
     section {
       background: #5ac88b;
     }
-    ul {
-      margin: 0;
-      padding: 20px;
-      width: 100%;
-      display: inline;
-    }
-
-    li {
-      margin: 10px;
-      font-size: 20px;
-      display: inline;
-    }
 
     nav a {
       padding: 5px;
@@ -61,11 +49,40 @@
       border: 2px solid black;
     }
 
-    main{
-      margin: 40px;
-      background-color: #5ac88b;
+nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      background-color: #333;
+    }
+
+    nav li {
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav li:hover {
+      transform: translateY(-20px) scale(1.1);
+    }
+
+    /* Main content animation */
+    main {
+      opacity: 0;
       animation: fadeIn 1s ease 1.2s forwards;
-  opacity: 0; /* initial state */
+      padding: 20px;
+      font-size: 1.2em;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     nav li {
@@ -82,6 +99,13 @@ nav li:hover {
   to {
     opacity: 1;
   }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
   </style>
   <body>

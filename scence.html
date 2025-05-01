@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mountain Scene</title>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to top, #05196e, #00a6ff); /* sky */
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .sun {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle, #ffd700, #ffa500);
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 70%;
+        transform: translateX(-50%);
+      }
+      .mountain {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid gray;
+      }
+      .mountain.one {
+        left: 20%;
+        transform: scale(1.1) rotate(-2deg);
+        border-bottom-color: white;
+      }
+
+      .mountain.two {
+        left: 40%;
+        transform: translate(100px, -50px);
+        border-bottom-color: darkgrey;
+      }
+
+      .mountain.three {
+        left: 60%;
+        transform: scale(1.2) rotate(-1deg);
+        border-bottom-color: #7895fd;
+      }
+
+      .ground {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background: #2e7d32;
+      }
+
+      .cloud {
+        width: 300px;
+        height: 150px;
+        background-color: #ffffff; /* Cloud white color */
+        border-radius: 50%;
+        position: relative;
+        transform: skew(0deg, -10deg); /* Apply a slight skew for effect */
+      }
+
+      button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      button:active {
+        background-color: grey; /* Even darker green on click */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun"></div>
+    <div class="mountain one"></div>
+    <div class="mountain two"></div>
+    <div class="mountain three"></div>
+    <div class="ground"></div>
+    <div class="cloud">
+      <button onclick="changeCloudColor()">Click Me</button>
+    </div>
+  </body>
+</html>
