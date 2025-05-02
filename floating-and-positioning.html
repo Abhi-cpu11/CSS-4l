@@ -61,7 +61,7 @@ nav ul {
       color: white;
       padding: 10px 15px;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: all 0.3s ease;
     }
 
     nav li:hover {
@@ -70,17 +70,28 @@ nav ul {
 
     /* Main content animation */
     main {
-opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 1.2s;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.2s forwards;
+      padding: 20px;
+      font-size: 1.2em;
     }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    nav li {
+  transition: transform 0.3s ease;
 }
 
+nav li:hover {
+  transform: translateY(-20px) scale(1.1);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

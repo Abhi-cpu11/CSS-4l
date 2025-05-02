@@ -6,8 +6,11 @@
     <title>Document</title>
     <style>
       .cooks {
-        position: relative;
         transition: duration 0.5s;
+        transition: width 2s;
+        transition-timing-function: linear;
+        height: 200px;
+        width: 200px;
       }
       div {
         width: 100px;
@@ -17,6 +20,7 @@
         animation-name: mymove;
         animation-duration: 5s;
         animation: delay 2s;
+        background-image: url("https://img.freepik.com/free-vector/abstract-wallpaper_23-2148663179.jpg?semt=ais_hybrid&w=740");
       }
 
       @keyframes mymove {
@@ -36,7 +40,7 @@
   <body>
     <img
       class="cooks"
-      src="https://cdn.pixabay.com/photo/2016/11/29/09/08/cooking-1867280_1280.jpg"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmQf60kgjIlc3wqxHx-BYqmDGxBtIBzxsXQ&s"
       alt="Cooking"
       width="100%"
       height="100%" />
