@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>background-and-text</title>
+    <title>floats and position</title>
   </head>
   <style>
     body {
@@ -27,11 +27,12 @@
     }
 
     nav a {
-      padding: 5px;
-      margin: 4px;
-      background-color: #191970;
-      color: #f5f5ff;
-      border-color: black;
+padding: 5px;
+  margin: 4px;
+  border: 2px solid black;
+  color: #2A2A2A;
+  text-decoration: none;
+
     }
 
     li a:focus {
@@ -50,11 +51,12 @@
     }
 
 nav ul {
-      list-style-type: none;
-      padding: 0;
       display: flex;
       gap: 20px;
       background-color: #333;
+        margin: 0px;
+  padding: 0px;
+  list-style: none;
     }
 
     nav li {
@@ -62,6 +64,8 @@ nav ul {
       padding: 10px 15px;
       cursor: pointer;
       transition: all 0.3s ease;
+      float: left;
+  display: block;
     }
 
     nav li:hover {
@@ -100,12 +104,34 @@ nav li:hover {
     opacity: 1;
   }
 }
+#relative {
+  position: relative;
+}
+
+#absolute {
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  bottom: 0px;
+  right: 0px;
+}
 
 nav {
+  background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 8px;
+  resize: both;
+  overflow: auto;
+  width: calc(100% - 16px);
+}
+
+#img1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1
 }
   </style>
   <body>
@@ -117,8 +143,8 @@ nav {
       <ul><li><a href="div-and-span.html" class="navlink">Div and Span</a></ul></li>
     </nav>
     <main>
-    <h1>background-and-text</h1>
-    <section>
+    <h1>Floats And Positioning</h1>
+    <section id="relative">
       <p>i went to the store with Abhi</p>
       <p>i went to the store with Abhi</p>
       <p>i went to the store with Abhi</p>
@@ -127,6 +153,7 @@ nav {
       <p>i went to the store with Abhi</p>
       <p>i went to the store with Abhi</p>
       <p>i went to the store with Abhi</p>
+      <p id="absolute">This is an absolute paragraph</p>
     </section>
 </main>
     <div><p>bomboclat</p></div>

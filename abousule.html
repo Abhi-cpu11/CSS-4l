@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+        float: left;
+      }
+      img {
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position: absolute;</h2>
+
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed):
+    </p>
+
+    <div class="relative">
+      This div element has position: relative;
+      <div class="absolute">
+        <img
+          src="https://d.newsweek.com/en/full/1563651/kobe-bryant.jpg?w=1200&f=4989801fc1412ecc6fff84cba4d29fc0"
+          alt="Description" />
+      </div>
+    </div>
+  </body>
+</html>
