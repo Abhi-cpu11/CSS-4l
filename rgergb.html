@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naawi-Oodena – The Future After Dark</title>
+    <style>
+      /* === COLOUR SCHEME ===
+    Primary: Hot Pink (#ff007f)
+    Accent: Neon Blue (#00f7ff)
+    Background: Jet Black (#0c0c0c)
+    Neutral: White (#ffffff), Soft Gray (#999999)
+    */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0c0c0c;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: #ffffff;
+      }
+
+      /* Nav Bar */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(8px);
+        background: rgba(20, 20, 20, 0.7);
+        border-bottom: 1px solid #00f7ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+        color: #ff007f;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #00f7ff;
+        transition: 0.4s ease;
+      }
+
+      nav a:hover {
+        color: #00f7ff;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        color: #00f7ff;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: #cccccc;
+        max-width: 700px;
+        margin: 0 auto 2rem auto;
+      }
+
+      .hero img {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 30px #00f7ff88;
+      }
+
+      /* Feature Panels */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .card {
+        background: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px solid #333;
+        box-shadow: 0 0 12px #ff007f33;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 25px #ff007f88;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .card h3 {
+        color: #ff007f;
+        margin-bottom: 0.5rem;
+      }
+
+      .card p {
+        color: #bbbbbb;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #777;
+        font-size: 0.9rem;
+        background-color: #0c0c0c;
+        border-top: 1px solid #333;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Naawi</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="residential.html">Residential</a>
+        <a href="community.html">Community</a>
+        <a href="nightlife.html">Nightlife</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Naawi-Oodena: The Future After Dark</h2>
+      <p>
+        Step into a luminous future — where Indigenous tradition meets urban
+        glow. At night, Naawi-Oodena pulses with energy, culture, and community.
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1400&q=80"
+        alt="Futuristic neon city" />
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1617957746599-dcfef4ec73c5?auto=format&fit=crop&w=800&q=80"
+          alt="Community space" />
+        <h3>Community Spaces</h3>
+        <p>
+          Safe, welcoming gathering zones with LED art paths, community fires,
+          and youth lounges glowing into the night.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=800&q=80"
+          alt="Nightlife zone" />
+        <h3>Nightlife Village</h3>
+        <p>
+          Live music, food stalls, and illuminated murals bring the heart of the
+          community alive after dark.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1533077161703-646d60d97ab2?auto=format&fit=crop&w=800&q=80"
+          alt="Futuristic education hub" />
+        <h3>Cultural Campus</h3>
+        <p>
+          Learn Indigenous stories through digital art, interactive exhibits,
+          and projection domes lit in vivid color.
+        </p>
+      </div>
+    </section>
+
+    <footer>&copy; 2045 Naawi-Oodena | Designed by Abhijay</footer>
+  </body>
+</html>
